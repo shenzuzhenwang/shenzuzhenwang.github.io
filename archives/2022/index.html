@@ -1,187 +1,384 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Archives: 2022 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="shenzu">
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
+    <meta name="description" content="个人博客，主要涉及个人的经历，部分编程工具与经验等">
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+    
+    
+    
+    
+    
+    <title>归档 | “神祖”的个人博客</title>
+    <!-- inject:style -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <!-- endinject -->
+    <style>
+        .cube-loading {
+            top: 0;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('/images/lg/loading.gif') no-repeat center center;
+            background-color: rgba(0,0,0,.7);
+        }
 
-  
+        .cube-loading.out {
+            display: none;
+        }
+
+        .cube-loading:before {
+            display: block;
+            content: '加载中';
+            position: relative;
+            width: 100%;
+            top: 50%;
+            right: -50%;
+            color: #fff;
+        }
+
+        @media(max-width: 768px) {
+            .cube-loading:before {
+                font-size: 1.2em;
+                transform: translate(-24px,20px);
+                -webkit-transform: translate(-24px,20px);
+                -o-transform: translate(-24px,20px);
+                -ms-transform: translate(-24px,20px);
+            }
+        }
+
+        @media(min-width: 768px) {
+            .cube-loading:before {
+
+            }
+        }
+    </style>
+    
 <meta name="generator" content="Hexo 6.2.0"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+<div class="cube-body">
+    <nav id="cube-top-memu" class="cube-menu">
+    <ul class="cube-menu-collapse">
+        
+        <li>
+            <i class="cube-icon cube-icon-home" aria-hidden="true"></i>
+            <a href="/">首页</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-archive" aria-hidden="true"></i>
+            <a href="/archives">归档</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-categories" aria-hidden="true"></i>
+            <a href="/categories">分类</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-tags" aria-hidden="true"></i>
+            <a href="/tags">标签</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-about" aria-hidden="true"></i>
+            <a href="/about-me">关于我</a>
+        </li>
+        
+    </ul>
+</nav>
+<nav class="cube-side-menu" id="cube-side-menu">
+    <ul class="cube-menu-list">
+        
+        <li>
+            <a class="lrc-control">开启歌词</a>
+        </li>
+        
+        <li>
+            <a class="scroll-to-top">回到顶部</a>
+        </li>
+    </ul>
+</nav>
+    <header class="cube-header" id="cube-header">
+    <img src=" 65435876_p4.jpg " alt="头部背景图片">
+    
+    <div class="cube-type">
+        <span class="cube-typed-title">“神祖”的个人博客</span>
+        <span class="cube-typed-cursor">|</span>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
+    
 </header>
 
-      <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
+    <style>
+        nav.cube-menu:before {
+            content: '';
+            visibility: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 44px;
+        
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+        
+            z-index: -1;
+            background-image: url('/images/65435876_p5.jpg');
+            background-repeat: no-repeat;
+            background-position: center -56px;
+            background-size: cover;
+            background-color: transparent;
+        }
+
+        header.cube-background.cube-header-background {
+            visibility: hidden;
+            background-image: url('/images/65435876_p5.jpg');
+            background-position: center -100px;
+        }
+    </style>
+    <header class="cube-background cube-header-background">
+        
+        <div class="cube-type">
+            <span class="cube-typed-title">“神祖”的个人博客</span>
+            <span class="cube-typed-cursor">|</span>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/08/03/hello-world/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-08-03T14:43:13.184Z" itemprop="datePublished">Aug 3</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/03/hello-world/">Hello World</a>
-    </h1>
-  
-
+        
     </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    <div class="load-header-background"></div>
+    <script>
+        (function (window) {
 
+            window.headerModule = {}
+            window.headerModule.image = {
+                width: '2000',
+                height: '910'
+            }
 
-</section>
+        })(window)
+    </script>
+    
+    <div class="cube-content">
+        <div class="cube-left">
+            <style>
+    @media(max-width: 768px) {
+        body {
+            background-color: #fff!important;
+        }
+    }
+</style>
+<div class="cube-archives">
+    
         
-          <aside id="sidebar">
-  
+        <div class="cube-archive" style="margin-top: 0;">
+            
+                
+                   
+                            <h1 class="title">2022</h1>
+                            <ul class="posts">
+                   
+                            <li class="post">
+                                <a href="/2022-08-04-self-introduction/">self-introduction</a>
+                            </li>
+                
+            
+                
+                   
+                            <li class="post">
+                                <a href="/2022-08-03-hello-world/">Hello World</a>
+                            </li>
+                
+            
+                    </ul>
+                        </div>
+        
     
+</div>
+        </div>
+        <div class="cube-right">
+            
 
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li></ul>
+<div class="cube-search cube-sidebar" id="cube-search">
+    <div class="search-container">
+        <input type="text" placeholder="搜索" class="cube-search-input" id="cube-search-input">
+        <i class="cube-icon cube-icon-search cube-search-submit" aria-hidden="true"></i>
     </div>
-  </div>
+    <!-- TODO 通过给window赋一个全局变量，通过脚本赋值 -->
+</div>
+<script>
+    (function (window) {
+        'use strict';
+        window.searchModule = {}
+        window.searchModule.JSONUrl = '/content.json'
+        window.searchModule.rootUrl = '/'
+    })(window)
+</script>
+<div class="cube-search-form">
+    <div class="cube-search-control">
+        <input type="text" placeholder="搜索" class="search-input">
+        <a class="close-button">
+            <i class="cube-icon cube-close" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="cube-search-result"></div>
+</div>
 
 
-  
+<div class="cube-author cube-sidebar" id="cube-author">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/08/03/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
+    
+    <span>shenzu</span>
+    
+    
+    <a title="个人博客，主要涉及个人的经历，部分编程工具与经验等">个人博客，主要涉及个人的经历，部分编程工具与经验等</a>
+    
+    <div class="count">
+        <a class="count articles"><span>2</span>文章</a>
+        <a class="count tags"><span>1</span>标签</a>
+        <a class="count categories"><span>1</span>分类</a>
     </div>
-  </div>
+</div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+
+
+<div class="cube-music cube-sidebar" id="cube-music">
+    <div class="cube-player aplayer" id="cube-player"></div>
+</div>
+<script>
+    (function (window) {
+        window.musicModule = {}
+        window.musicModule.musicConfig = '{"narrow":false,"autoplay":false,"showlrc":3,"theme":"#b7daff","mutex":true,"mode":"circulation","preload":"auto","listmaxheight":"513px","music":[{"title":"Beautiful World","author":"宇多田光","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/Beautiful World.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/Beautiful World.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/Beautiful World.jpg"},{"title":"One Last Kiss","author":"宇多田光","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/One Last Kiss.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/One Last Kiss.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/One Last Kiss.jpg"},{"title":"VOYAGER~日付のない墓標","author":"林原惠美","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/VOYAGER~日付のない墓標.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/VOYAGER~日付のない墓標.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/VOYAGER~日付のない墓標.jpg"},{"title":"残酷な天使のテーゼ","author":"高桥洋子","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/残酷な天使のテーゼ.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/残酷な天使のテーゼ.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/残酷な天使のテーゼ.jpg"},{"title":"甘き死よ、来たれ","author":"ARIANNE","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/甘き死よ、来たれ.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/甘き死よ、来たれ.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/甘き死よ、来たれ.jpg"},{"title":"百家策","author":"祖娅纳惜","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/百家策.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/百家策.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/百家策.jpg"},{"title":"绝顶","author":"祖娅纳惜","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/绝顶.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/绝顶.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/绝顶.jpg"},{"title":"天下局","author":"祖娅纳惜","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/天下局.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/天下局.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/天下局.jpg"},{"title":"万象霜天","author":"祖娅纳惜","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/万象霜天.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/万象霜天.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/万象霜天.jpg"},{"title":"玄门列传","author":"祖娅纳惜","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/玄门列传.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/玄门列传.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/玄门列传.jpg"},{"title":"玉碎九渊","author":"祖娅纳惜","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/玉碎九渊.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/玉碎九渊.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/玉碎九渊.jpg"},{"title":"昭阳","author":"祖娅纳惜X三无","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/昭阳.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/昭阳.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/昭阳.jpg"},{"title":"魑魅魍魉","author":"茶理理","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/魑魅魍魉.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/魑魅魍魉.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/魑魅魍魉.jpg"},{"title":"妖行神都","author":"茶理理","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/妖行神都.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/妖行神都.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/妖行神都.jpg"},{"title":"大祀官","author":"肥皂菌","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/大祀官.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/大祀官.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/大祀官.jpg"},{"title":"绯焰悲空","author":"肥皂菌","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/绯焰悲空.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/绯焰悲空.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/绯焰悲空.jpg"},{"title":"绝龙岭","author":"肥皂菌","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/绝龙岭.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/绝龙岭.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/绝龙岭.jpg"},{"title":"聂隐娘","author":"肥皂菌","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/聂隐娘.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/聂隐娘.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/聂隐娘.jpg"},{"title":"万神纪","author":"肥皂菌","url":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/source/万神纪.mp3","lrc":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/lrc/万神纪.lrc","pic":"https://fastly.jsdelivr.net/gh/shenzuzhenwang/CDN/blog/music/image/万神纪.jpg"}]}'
+        window.musicModule.lrcConfig = {
+            open: '开启歌词',
+            close: '关闭歌词'
+        }
+    })(window)
+</script>
+
+
+
+<div class="cube-recent-posts cube-sidebar" id="cube-recent-posts">
+    <div class="title">
+        <a>近期文章</a>
     </div>
-  </div>
+    <ul class="list">
+        
+        
+        <li>
+            <!-- TODO 如果文章要显示图片，那么在front-matter上添加preview属性(url or path) -->
+            
+            <div class="normal">
+                <p class="index first">
+                    <span>1</span>
+                </p>
+                <p class="title">
+                    <a href="/2022-08-04-self-introduction/" title="self-introduction">self-introduction</a>
+                </p>
+            </div>
+            
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>2</span>
+                </p>
+                <p class="title">
+                    <a href="/2022-08-03-hello-world/" title="Hello World">Hello World</a>
+                </p>
+            </div>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+
+<div class="cube-categories cube-sidebar" id="cube-categories">
+    <div class="title">
+        <a href="/categories">分类</a>
+    </div>
+    <div class="cube-boxs">
+        
+        
+        <div class="cube-box ">
+            <a href="/categories/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/">#个人介绍</a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="cube-tagcloud cube-sidebar" id="cube-tagcloud">
+    <div class="title">
+        <a href="/tags">标签云</a>
+    </div>
+    <div class="cube-boxs">
+        
+        
+        <div class="cube-box ">
+            <a href="/tags/%E8%92%9F%E8%92%BB/">#蒟蒻</a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="cube-links cube-sidebar" id="cube-links">
+    <div class="title">
+        <a>个人链接</a>
+    </div>
+    <ul class="list">
+        
+        <li>
+            
+            
+            <img src="/images/Octocat.jpg">
+            
+            <a href="https://github.com/shenzuzhenwang" target="_blank">GitHub</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+<div class="cube-friend-links cube-sidebar" id="cube-friend-links">
+    <div class="title">
+        <a>友情链接</a>
+    </div>
+    <ul class="list">
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="/images/friend_links.jpg ">
+            <a href="" target="_blank">暂缺</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+    </div>
+</div>
+<footer class="cube-footer">
+    
+© 2017 shenzu
+
+<br>
+Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
 </footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
+<!-- inject:script -->
 <script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
+<!-- endinject -->
+<div class="cube-loading out"></div>
 </body>
 </html>
