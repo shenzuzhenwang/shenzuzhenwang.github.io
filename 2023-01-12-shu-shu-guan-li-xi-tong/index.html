@@ -5,7 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="鼠鼠管理系统, blog">
-    <meta name="description" content="">
+    <meta name="description" content="鼠鼠管理系统一、软件框架本工具以Qt5.14为基本框架，经过多次试验，并未发现明显问题。
+本工具主要语言为C++，编译器为minGW，build工具为gmake，使用Qt官方IDE即Qt Creator。
+二、模块描述1. 主界面模块主界面">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -482,12 +484,37 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Cpp/">
+                                <span class="chip bg-color">Cpp</span>
+                            </a>
+                        
+                            <a href="/tags/Qt/">
+                                <span class="chip bg-color">Qt</span>
+                            </a>
+                        
+                            <a href="/tags/MySQL/">
+                                <span class="chip bg-color">MySQL</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Qt/" class="post-category">
+                                Qt
+                            </a>
+                        
+                            <a href="/categories/Qt/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                数据库
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -503,14 +530,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-12
+                    2023-02-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    520
                 </div>
                 
 
@@ -540,7 +567,21 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="鼠鼠管理系统"><a href="#鼠鼠管理系统" class="headerlink" title="鼠鼠管理系统"></a>鼠鼠管理系统</h1><h2 id="一、软件框架"><a href="#一、软件框架" class="headerlink" title="一、软件框架"></a>一、软件框架</h2><p>本工具以Qt5.14为基本框架，经过多次试验，并未发现明显问题。</p>
+<p>本工具主要语言为C++，编译器为minGW，build工具为gmake，使用Qt官方IDE即Qt Creator。</p>
+<h2 id="二、模块描述"><a href="#二、模块描述" class="headerlink" title="二、模块描述"></a>二、模块描述</h2><h3 id="1-主界面模块"><a href="#1-主界面模块" class="headerlink" title="1. 主界面模块"></a>1. 主界面模块</h3><p>主界面模块包括多个子界面：</p>
+<p>小鼠信息界面，可以在表格上直接查看小鼠的各项信息，并且可以通过点击，进入小鼠信息模块；</p>
+<p>查询界面，可以通过名称、出生日期、最后喂养时间、健康状态和负责人来查询特定的小鼠；</p>
+<p>死亡列表界面，可以在表格上直接查看死亡小鼠的各项信息，并且可以直接在表格上进行修改；</p>
+<p>喂食记录页面，可以在表格上直接查看喂食的记录，并且可以直接在表格上进行修改；</p>
+<p>登录记录页面，可以查看用户的登录记录，并且可以直接在表格上进行修改；</p>
+<p>用户信息界面，可以查看所有用户的各项信息，并且可以直接在表格上进行修改</p>
+<h3 id="2-小鼠信息模块"><a href="#2-小鼠信息模块" class="headerlink" title="2. 小鼠信息模块"></a>2. 小鼠信息模块</h3><p>显示ID号、名称、描述、健康程度、负责人、出生日期和死亡日期，并且具有喂食、出生、死亡、修改信息等功能。</p>
+<h3 id="3-数据库连接模块"><a href="#3-数据库连接模块" class="headerlink" title="3. 数据库连接模块"></a>3. 数据库连接模块</h3><p>总共创建了三个连接：normal、senior、admin，根据登录用户的不同权限，来选择使用对应的连接。</p>
+<h3 id="4-登录模块"><a href="#4-登录模块" class="headerlink" title="4. 登录模块"></a>4. 登录模块</h3><p>通过在登录界面上输入用户名与密码，然后在数据库中进行查询，最后根据是否查询正确，与权限等级，来进行登录。</p>
+<h3 id="5-注册模块"><a href="#5-注册模块" class="headerlink" title="5. 注册模块"></a>5. 注册模块</h3><p>通过在注册输入各项信息：用户名、密码、地址、手机号、电话号等信息，完成注册，并将信息保存至数据库中。</p>
+<h3 id="6-帮助模块"><a href="#6-帮助模块" class="headerlink" title="6. 帮助模块"></a>6. 帮助模块</h3><p>在帮助界面上，可以查看到详细的使用方法，用于初次使用本系统的用户。</p>
+
                 
             </div>
             <hr/>
@@ -603,7 +644,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Cpp/">
+                                    <span class="chip bg-color">Cpp</span>
+                                </a>
+                            
+                                <a href="/tags/Qt/">
+                                    <span class="chip bg-color">Qt</span>
+                                </a>
+                            
+                                <a href="/tags/MySQL/">
+                                    <span class="chip bg-color">MySQL</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -666,18 +719,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023-01-12-shu-shu-guan-li-xi-tong/">
+                <a href="/2023-02-07-2022-ji-suan-ji-bao-yan-jing-yan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="鼠鼠管理系统">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="2022计算机保研经验">
                         
-                        <span class="card-title">鼠鼠管理系统</span>
+                        <span class="card-title">2022计算机保研经验</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -687,18 +739,29 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-12
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-07
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            shenzu
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BB%8F%E9%AA%8C/" class="post-category">
+                                    经验
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BF%9D%E7%A0%94/">
+                        <span class="chip bg-color">保研</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -950,7 +1013,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">2.6k</span>
+                        class="white-color">5.3k</span>
             
             
             
