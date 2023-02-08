@@ -2,27 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.shenzu.site/2023-02-07-2022-ji-suan-ji-bao-yan-jing-yan/</loc>
+    <loc>https://blog.shenzu.site/posts/bd8301e6.html</loc>
     
-    <lastmod>2023-02-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.shenzu.site/2023-01-12-shu-shu-guan-li-xi-tong/</loc>
-    
-    <lastmod>2023-02-07</lastmod>
+    <lastmod>2023-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.shenzu.site/2022-12-11-shi-yong-c-11-shi-xian-sysy-yu-yan-jian-dan-bian-yi-qi/</loc>
+    <loc>https://blog.shenzu.site/posts/fe67a353.html</loc>
     
-    <lastmod>2023-02-07</lastmod>
+    <lastmod>2023-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.shenzu.site/posts/b48aa583.html</loc>
+    
+    <lastmod>2023-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.shenzu.site/posts/53f2ae9e.html</loc>
+    
+    <lastmod>2023-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -118,15 +127,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://blog.shenzu.site/2022-08-04-self-introduction/</loc>
-    
-    <lastmod>2022-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://blog.shenzu.site/</loc>
@@ -138,6 +138,13 @@
   
   <url>
     <loc>https://blog.shenzu.site/tags/%E8%92%9F%E8%92%BB/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.shenzu.site/tags/%E4%BF%9D%E7%A0%94/</loc>
     <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -171,17 +178,17 @@
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://blog.shenzu.site/tags/%E4%BF%9D%E7%A0%94/</loc>
+    <loc>https://blog.shenzu.site/categories/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/</loc>
     <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://blog.shenzu.site/categories/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/</loc>
+    <loc>https://blog.shenzu.site/categories/%E7%BB%8F%E9%AA%8C/</loc>
     <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -196,13 +203,6 @@
   
   <url>
     <loc>https://blog.shenzu.site/categories/Qt/</loc>
-    <lastmod>2023-02-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.shenzu.site/categories/%E7%BB%8F%E9%AA%8C/</loc>
     <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
